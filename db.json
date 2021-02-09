@@ -1,0 +1,20 @@
+{ "user": [
+    {
+      "name": "Marcos",
+      "avatar": "https://avatars.githubusercontent.com/u/11647315?v=4"
+    }
+  ],
+  "products": [
+    {
+      "id": "sharkoon-sgk2",
+      "name": "Teclado Mecânico Gamer",
+      "description": "Sharkoon - SKILLER MECH SGK2",
+      "price": "R$ 200,00",
+      "image": "https://www.techtesters.eu/pic/SHARKOONSGK2/152.jpg",
+      "categories": [
+        "Gamer",
+        "Periférico"
+      ]
+    }
+  ]
+}
