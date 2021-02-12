@@ -1,4 +1,4 @@
-import { Box, Image, Badge } from '@chakra-ui/react'
+import { Box, Image, Badge, Flex } from '@chakra-ui/react'
 
 type CardProps = {
   product: {
@@ -13,7 +13,7 @@ type CardProps = {
 
 const Card = ({ product } : CardProps) => {
   return (
-    <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden" shadow="xl" className="card">
+    <Box maxW="sm" borderWidth="1px" borderColor="gray.100" rounded="lg" overflow="hidden" shadow="xl" className="card">
       <Image rounded="none" src={product.image} alt="Produto" maxW="sm" paddingBottom="2"/>
       <Box textAlign="center">
         <Box
@@ -40,11 +40,11 @@ const Card = ({ product } : CardProps) => {
             <p>{product.description}</p>
           </Box>
       </Box>
-      <Box textAlign="right">
-        <Badge borderRadius="sm" px="2" colorScheme="green" textAlign="right">
+      <Flex textAlign="right" padding="2">
+        <Badge colorScheme="green" padding="1">
           <h3>{product.price}</h3>
         </Badge>
-      </Box>
+      </Flex>
     </Box>
   )
 }
