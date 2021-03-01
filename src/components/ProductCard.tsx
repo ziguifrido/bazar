@@ -1,6 +1,6 @@
 import { Box, Image, Badge, Flex } from '@chakra-ui/react'
 
-type CardProps = {
+type ProductCardProps = {
   product: {
     id: string,
     name: string,
@@ -11,7 +11,7 @@ type CardProps = {
   }
 }
 
-const Card = ({ product } : CardProps) => {
+const ProductCard = ({ product } : ProductCardProps) => {
   return (
     <Box maxW="sm" borderWidth="1px" borderColor="gray.100" rounded="lg" overflow="hidden" shadow="xl" className="card">
       <Image rounded="none" src={product.image} alt="Produto" maxW="sm" paddingBottom="2"/>
@@ -49,4 +49,4 @@ const Card = ({ product } : CardProps) => {
   )
 }
 
-export default Card
+export default ProductCard
